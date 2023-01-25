@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "GhCzHYWRceqtzCrDBwgl9WT3+nXFr4/JL7JN8l1eGM23TZqMDvUsMNmGgC/Ue+9ackbES1l9mENgElMjf1+uGg==",
+  "dgSpecHash": "BwIlsEECxZURt6MHFkAH1lZJJ1ofMeqHGRuvleao3G0EsOgB/HDJ6EHfC72SzcyqyNGvxTwDmuVnzYxymuf9EA==",
   "success": true,
-  "projectFilePath": "/Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.Api/CQRSBookstore.Api.csproj",
+  "projectFilePath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.Api/CQRSBookstore.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/moongoblin/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/moongoblin/.nuget/packages/microsoft.aspnetcore.openapi/7.0.0/microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "/Users/moongoblin/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/moongoblin/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/Users/moongoblin/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/moongoblin/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

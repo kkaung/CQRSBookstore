@@ -32,3 +32,17 @@
 /Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.pdb
 /Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.genruntimeconfig.cache
 /Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/ref/CQRSBookstore.App.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.csproj.AssemblyReference.cache
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.AssemblyInfoInputs.cache
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.AssemblyInfo.cs
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.csproj.CoreCompileInputs.cache
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/refint/CQRSBookstore.App.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.pdb
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/bin/Debug/net7.0/CQRSBookstore.App.deps.json
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/bin/Debug/net7.0/CQRSBookstore.App.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/bin/Debug/net7.0/CQRSBookstore.App.pdb
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/ref/CQRSBookstore.App.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/bin/Debug/net7.0/CQRSBookstore.App.runtimeconfig.json
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/Debug/net7.0/CQRSBookstore.App.genruntimeconfig.cache

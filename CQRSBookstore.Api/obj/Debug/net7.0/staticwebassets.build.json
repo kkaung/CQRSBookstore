@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nLyPZtu2rdj3U5+oT7mvKDOhFfVuDgYOinbEkoqrKt4=",
+  "Source": "CQRSBookstore.Api",
+  "BasePath": "_content/CQRSBookstore.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,21 +1,23 @@
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CQRSBookstore.Api.Controllers;
 
-
 [Route("api/public")]
 public class AccountController : ControllerBase
 {
-    public AccountController() { }
+    private readonly IMediator _mediator;
 
-    [HttpPost("register")]
-    public async Task<ActionResult> Register() {
-
-        
+    public AccountController(IMediator mediator)
+    {
+        _mediator = mediator;
     }
 
-    [HttpPost("login")]
-    public async Task<ActionResult> Login() {
+    // [HttpPost("register")]
+    // public async Task<ActionResult> Register() { }
 
-    }
+    // [HttpPost("login")]
+    // public async Task<ActionResult> Login() {
+
+    // }
 }
