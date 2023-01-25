@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ELsCX7si4SWmkv6gCxpPt6EfrEY+ZZAhuNOytzQuCZT1rq9bBqddFd/4T29EViXGjx16pYX7mYKuwb3sW3KEwg==",
+  "success": true,
+  "projectFilePath": "/Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
+  "expectedPackageFiles": [
+    "/Users/moongoblin/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
