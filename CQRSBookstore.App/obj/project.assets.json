@@ -30,6 +30,35 @@
             "related": ".xml"
           }
         }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "11.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
       }
     }
   },
@@ -63,11 +92,50 @@
         "mediatr.contracts.1.0.1.nupkg.sha512",
         "mediatr.contracts.nuspec"
       ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+      "sha512": "jfD2NBYvP+HiUil2DWfM4bn+bCLp4H2xvoc9aorcnn2Jpgz7Ey8RyYMpgqeF3bs6CP6t8pzb6WkF5NFF/1RLHA==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "MediatR >= 11.1.0"
+      "MediatR >= 11.1.0",
+      "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0"
     ]
   },
   "packageFolders": {
@@ -76,11 +144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
+      "projectUniqueName": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
       "projectName": "CQRSBookstore.App",
-      "projectPath": "/Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
+      "projectPath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
       "packagesPath": "/Users/moongoblin/.nuget/packages/",
-      "outputPath": "/Users/moongoblin/Documents/Developments/examples/CQRSBookstore/CQRSBookstore.App/obj/",
+      "outputPath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/moongoblin/.nuget/NuGet/NuGet.Config"
@@ -110,6 +178,10 @@
           "MediatR": {
             "target": "Package",
             "version": "[11.1.0, )"
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[11.0.0, )"
           }
         },
         "imports": [
