@@ -16,6 +16,7 @@ public static class AppDependencyInjection
         services.AddDbContext<DataContext>();
         services.AddScoped<IBookRepository, BookRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IReservationsRepository, ReservationsRepository>();
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
         return services;

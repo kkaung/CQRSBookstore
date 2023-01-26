@@ -40,3 +40,8 @@
 /Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/CQRSBookstore.App.dll
 /Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/CQRSBookstore.App.pdb
 /Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/obj/Debug/net7.0/CQRSBookstore.UI.csproj.CopyComplete
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

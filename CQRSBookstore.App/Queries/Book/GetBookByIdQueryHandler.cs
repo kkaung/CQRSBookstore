@@ -12,7 +12,7 @@ public class GetBookByIdQueryHandler : IRequestHandler<GetBookByIdQuery, Models.
         _bookRepository = bookRepository;
     }
 
-    public async Task<Models.Book> Handle(
+    public async Task<Models.Book?> Handle(
         GetBookByIdQuery request,
         CancellationToken cancellationToken
     )

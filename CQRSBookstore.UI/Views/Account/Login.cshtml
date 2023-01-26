@@ -1,27 +1,29 @@
-@{
-    ViewData["Title"] = "Login";
+@model CQRSBookstore.UI.Contracts.Account.LoginRequest;
 
-    
+@{
+    ViewData["Title"] = "Login";    
 }
 
-<form class="card" asp-action="Login">
+<div class="d-flex justify-content-center">
+<form class="card" style="min-width: 500px;" method="post">
   <h3 class="text-center card-header">Login</h3>
   <div class="card-body">
   <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <label for="email" class="form-label" >Email address</label>
+    <input type="email" name="email"  id="email" class="form-control" value="johndoe123@gmail.com"/>
   </div>
   <div class="mb-3">
-    <label for="password" class="form-label">Password</label>
-    <input type="password" class="form-control" id="password">
+    <label for="password" class="form-label" >Password</label>
+    <input type="password" name="password"  id="password" class="form-control" value="johndoe" />
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Remember me!</label>
   </div>
   <div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-    <a class="btn btn-light" asp-area="" asp-controller="register" asp-action="">Register</a>
+    <input type="submit" value="Submit" class="btn btn-primary" />
+    <a class="btn btn-light" asp-controller="register" asp-action="">Register</a>
   </div>
   </div>
 </form>
+</div>

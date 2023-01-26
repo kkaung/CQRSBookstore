@@ -1,5 +1,5 @@
 using CQRSBookstore.App.Queries.Book;
-using CQRSBookstore.UI.ViewModels;
+using CQRSBookstore.UI.Contracts.Book;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +18,7 @@ public class BookController : Controller
     }
 
     [HttpGet("")]
-    public async Task<IActionResult> SearchBooks([FromQuery] SearchModel search)
+    public async Task<IActionResult> SearchBooksResult([FromQuery] SearchBooks search)
     {
         if (search.q is null)
             search.q = "";
@@ -34,5 +34,12 @@ public class BookController : Controller
         var book = await _mediator.Send(new GetBookByIdQuery(new Guid(bid)));
 
         return View(book);
+    }
+
+    [HttpGet("reservation")]
+    public async Task<IActionResult> Reservation([FromRoute] int number)
+    {
+
+        return View();
     }
 }

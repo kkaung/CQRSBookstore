@@ -4,13 +4,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<header class="text-center">
+<header class="text-center mt-4">
     <h1 class="display-5">Welcome To CQRS Bookstore</h1>
     <h4 class="display-6">The first leading bookstore in Australia</h4>
 </header>
 
+<div class="mt-5">
+    <form class="d-flex" asp-action=""   method="get">
+        <input class="form-control me-2"  type="search" name="q" placeholder="Reservation Number..." style="max-width: 200px;">
+        <input  type="submit" class="btn btn-primary" value="Check"/>
+    </form>
+
 <div class="mt-4">
-    <h3>Hot Pre-Orders in Bookshop</h3>
+<h3>Hot Pre-Orders in Bookshop</h3>
 @model List<Book>
 <div class="d-flex">
    @foreach (var book in Model)
@@ -26,4 +32,5 @@
     </a>
     }
 </div>
+</div>    
 </div>

@@ -6,19 +6,19 @@
   <h3 class="text-center card-header">Register</h3>
   <div class="card-body">
   <div class="mb-3">
-    <label  class="form-label">Username</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+    <label  for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="username"  required>
   </div>
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+    <input type="email" class="form-control" id="email"  required>
   </div>
   <div class="mb-3">
     <label for="password" class="form-label">Password</label>
     <input type="password" class="form-control" id="password" required>
   </div>
   <div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+    <input class="btn btn-primary" type="submit" value="Submit" />
     <a class="btn btn-light" asp-area="" asp-controller="login" asp-action="">Login</a>
   </div>
   </div>

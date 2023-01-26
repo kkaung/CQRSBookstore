@@ -5,7 +5,7 @@ using CQRSBookstore.App.Common.interfaces.Account;
 
 namespace CQRSBookstore.App.Queries.Account;
 
-public class LoginQueryHandler : IRequestHandler<LoginQuery, AuthResponse>
+public class LoginQueryHandler : IRequestHandler<LoginQuery, AuthResult>
 {
     private IUserRepository _userRepository;
     private IJwtTokenGenerator _jwtTokenGenerator;
@@ -16,7 +16,7 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, AuthResponse>
         _jwtTokenGenerator = jwtTokenGenerator;
     }
 
-    public async Task<AuthResponse> Handle(LoginQuery request, CancellationToken cancellationToken)
+    public async Task<AuthResult> Handle(LoginQuery request, CancellationToken cancellationToken)
     {
         var user = await _userRepository.GetUserByEmail(request.Email);
 
@@ -28,8 +28,6 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, AuthResponse>
 
         var token = _jwtTokenGenerator.GenerateToken(user);
 
-        return null;
-
-        // return new AuthResponse(){Id = user.Id, Username = user.Username, Email = user.Email, Token = token};
+        return new AuthResult(user, token);
     }
 }

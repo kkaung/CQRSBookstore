@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CQRSBookstore.App.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230125132343_Initial")]
+    [Migration("20230126144605_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -72,7 +72,46 @@ namespace CQRSBookstore.App.Migrations
                             Author = "NHibernate King",
                             ISBN = 5343012320111L,
                             PublishedAt = new DateTime(2022, 8, 9, 14, 0, 0, 0, DateTimeKind.Utc),
-                            Title = "NHibernate Cookboook"
+                            Title = "NHibernate Cookbook"
+                        });
+                });
+
+            modelBuilder.Entity("CQRSBookstore.App.Models.Reservation", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("BookId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("PickupDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("ReservationDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reservations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("2f3c8222-e935-4551-b48f-a729c9cb26e6"),
+                            Number = 8067,
+                            PickupDate = new DateTime(2023, 1, 26, 14, 46, 5, 905, DateTimeKind.Utc).AddTicks(5380),
+                            ReservationDate = new DateTime(2023, 1, 26, 14, 46, 5, 905, DateTimeKind.Utc).AddTicks(5380)
                         });
                 });
 
@@ -86,11 +125,9 @@ namespace CQRSBookstore.App.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("PasswordHash")
-                        .HasColumnType("bytea");
-
-                    b.Property<byte[]>("PasswordSalt")
-                        .HasColumnType("bytea");
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -99,6 +136,30 @@ namespace CQRSBookstore.App.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("de80e2a6-3455-4a97-a53f-f915cfa21c74"),
+                            Email = "johndoe123@gmail.com",
+                            Password = "johndoe",
+                            Username = "John Doe"
+                        });
+                });
+
+            modelBuilder.Entity("CQRSBookstore.App.Models.Reservation", b =>
+                {
+                    b.HasOne("CQRSBookstore.App.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId");
+
+                    b.HasOne("CQRSBookstore.App.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }
