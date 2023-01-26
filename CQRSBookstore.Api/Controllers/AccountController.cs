@@ -6,12 +6,12 @@ namespace CQRSBookstore.Api.Controllers;
 [Route("public")]
 public class AccountController : ControllerBase
 {
-    // private readonly IMediator _mediator;
+    private readonly IMediator _mediator;
 
-    // public AccountController(IMediator mediator)
-    // {
-    //     _mediator = mediator;
-    // }
+    public AccountController(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
 
 
     [HttpPost("register")]

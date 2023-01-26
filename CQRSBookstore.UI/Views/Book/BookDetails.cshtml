@@ -1,0 +1,12 @@
+@using CQRSBookstore.App.Models;
+
+@model Book;
+<div>
+    <h3 class="display-6">
+        @Model.Title
+    </h3>
+    <div>Author: @Model.Author</div>
+    <div>ISBN: @Model.ISBN</div>
+    <div>Published At: @String.Format("{0:dd/MM/yyyy}", Model.PublishedAt)</div>
+    <button class="btn btn-primary mt-3">Reserve Book</button>
+</div>

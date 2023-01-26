@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using CQRSBookstore.App.Queries.Book;
 
 namespace CQRSBookstore.UI.Controllers;
 
@@ -17,8 +18,9 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        // var books = await _mediator.Send(new GetBooksQuery());
-        return View();
+        var books = await _mediator.Send(new GetBooksQuery());
+
+        return View(books);
     }
 
     public IActionResult Privacy()

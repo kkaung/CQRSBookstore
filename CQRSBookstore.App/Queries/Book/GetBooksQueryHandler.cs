@@ -17,7 +17,6 @@ public class GetBooksQueryHandler : IRequestHandler<GetBooksQuery, List<Models.B
         CancellationToken cancellationToken
     )
     {
-        Console.WriteLine("Handlers");
         return await _bookRepository.GetBooks();
     }
 }

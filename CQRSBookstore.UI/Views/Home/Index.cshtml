@@ -1,8 +1,29 @@
-﻿@{
+﻿@using CQRSBookstore.App.Models;
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<header class="text-center">
     <h1 class="display-5">Welcome To CQRS Bookstore</h1>
     <h4 class="display-6">The first leading bookstore in Australia</h4>
+</header>
+
+<div class="mt-4">
+    <h3>Hot Pre-Orders in Bookshop</h3>
+@model List<Book>
+<div class="d-flex">
+   @foreach (var book in Model)
+    {
+    <a  asp-controller="books"  asp-action="@book.Id" style="text-decoration: none;">
+    <div class="card" style="width: 18rem; margin-right: 2rem">
+        <div class="card-body">
+            <h5 class="card-title">@book.Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Author: @book.Author</h6>
+            <div class="text-secondary">ISBN: @book.ISBN</div>
+        </div>
+    </div>
+    </a>
+    }
+</div>
 </div>
