@@ -14,9 +14,9 @@
             <div class="container-fluid">
                 <div class="d-flex flex-grow-1">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CQRSBookstore</a>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search Books..." aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
+                    <form class="d-flex" asp-action="" asp-controller="books" method="get">
+                        <input class="form-control me-2"  type="search" name="q" placeholder="Search Books...">
+                        <input  type="submit" class="btn btn-primary" value="Search"/>
                     </form>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"

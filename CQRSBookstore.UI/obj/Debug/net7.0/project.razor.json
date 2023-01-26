@@ -18688,6 +18688,11 @@
       "FilePath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/Views/Book/SearchBooks.cshtml",
+      "TargetPath": "Views\\Book\\SearchBooks.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.3"

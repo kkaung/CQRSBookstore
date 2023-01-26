@@ -1,4 +1,5 @@
 using CQRSBookstore.App.Queries.Book;
+using CQRSBookstore.UI.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,17 @@ public class BookController : Controller
     {
         _logger = logger;
         _mediator = mediator;
+    }
+
+    [HttpGet("")]
+    public async Task<IActionResult> SearchBooks([FromQuery] SearchModel search)
+    {
+        if (search.q is null)
+            search.q = "";
+
+        var books = await _mediator.Send(new GetBooksByNameQuery(search.q));
+
+        return View(books);
     }
 
     [HttpGet("{bid}")]

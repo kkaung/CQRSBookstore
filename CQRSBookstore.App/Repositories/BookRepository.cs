@@ -26,6 +26,6 @@ public class BookRepository : IBookRepository
     
     public async Task<List<Book>> GetBooksByName(string search)
     {
-        return await _context.Books!.Where(b => b.Title.Contains(search)).ToListAsync();
+        return await _context.Books!.Where(b => b.Title.ToLower().Contains(search.ToLower())).ToListAsync();
     }
 }
