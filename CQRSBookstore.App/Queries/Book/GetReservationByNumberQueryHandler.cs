@@ -13,7 +13,7 @@ public class GetReservationByNumberQueryHandler
         _reservationsRepository = reservationsRepository;
     }
 
-    public async Task<Models.Reservation> Handle(
+    public async Task<Models.Reservation?> Handle(
         GetReservationByNumberQuery request,
         CancellationToken cancellationToken
     )

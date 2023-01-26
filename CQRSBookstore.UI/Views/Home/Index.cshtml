@@ -10,11 +10,10 @@
 </header>
 
 <div class="mt-5">
-    <form class="d-flex" asp-action=""   method="get">
+    <form class="d-flex" asp-action="reservation" asp-controller="books"  method="get">
         <input class="form-control me-2"  type="search" name="q" placeholder="Reservation Number..." style="max-width: 200px;">
         <input  type="submit" class="btn btn-primary" value="Check"/>
     </form>
-
 <div class="mt-4">
 <h3>Hot Pre-Orders in Bookshop</h3>
 @model List<Book>

@@ -1,0 +1,11 @@
+@using CQRSBookstore.App.Models;
+
+
+@model Reservation;
+<div>
+    <div>Book Name: @Model.Book!.Title</div>
+    <div>Reservation Number: @Model.Number</div>
+    <div>Reserver: @Model.User!.Username</div>
+    <div>Reservation Date: @String.Format("{0:dd/MM/yyyy}", Model.ReservationDate)</div>
+    <div>Pickup Date: @String.Format("{0:dd/MM/yyyy}", Model.PickupDate)</div>
+</div>

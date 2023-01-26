@@ -17,7 +17,7 @@ public class BookController : Controller
         _mediator = mediator;
     }
 
-    [HttpGet("")]
+    [HttpGet]
     public async Task<IActionResult> SearchBooksResult([FromQuery] SearchBooks search)
     {
         if (search.q is null)
@@ -37,9 +37,13 @@ public class BookController : Controller
     }
 
     [HttpGet("reservation")]
-    public async Task<IActionResult> Reservation([FromRoute] int number)
+    public async Task<IActionResult> ReservationDetails([FromQuery] SearchReservation search)
     {
+        var reservation = await _mediator.Send(new GetReservationByNumberQuery(search.q));
 
-        return View();
+        if (reservation is null)
+            return RedirectToAction("Index", "Home");
+
+        return View(reservation);
     }
 }
