@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "27s0AwrIh42LkINulxKid2ni3tSLBZBjMHWGj/lzsqbTntznjO7b9aERaTiKf+P0mD65qKVaenc5zqZuAR3PHg==",
+  "dgSpecHash": "x8loTZMuqKt52QuJKCoogaANNw1t5/uSr/ohl/Ds89B/rNmtpiFyEC0A6SB2S4THq9f3KrxxnMq7vRRnzp3MqQ==",
   "success": true,
   "projectFilePath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/CQRSBookstore.UI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/moongoblin/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.2/microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.2/microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.2/microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/npgsql/7.0.1/npgsql.7.0.1.nupkg.sha512",
+    "/Users/moongoblin/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.1/npgsql.entityframeworkcore.postgresql.7.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,7 +1,10 @@
+using CQRSBookstore.App;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddApplication();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

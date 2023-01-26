@@ -29,3 +29,14 @@
 /Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/obj/Debug/net7.0/CQRSBookstore.UI.pdb
 /Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/obj/Debug/net7.0/CQRSBookstore.UI.genruntimeconfig.cache
 /Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/obj/Debug/net7.0/ref/CQRSBookstore.UI.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/MediatR.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Npgsql.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/CQRSBookstore.App.dll
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/bin/Debug/net7.0/CQRSBookstore.App.pdb
+/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.UI/obj/Debug/net7.0/CQRSBookstore.UI.csproj.CopyComplete

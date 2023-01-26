@@ -2,20 +2,20 @@
     ViewData["Title"] = "Register";
 }
 
-<form asp-action="Login" class="card">
+<form class="card" asp-action="Register">
   <h3 class="text-center card-header">Register</h3>
   <div class="card-body">
   <div class="mb-3">
     <label  class="form-label">Username</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
   </div>
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
   </div>
   <div class="mb-3">
     <label for="password" class="form-label">Password</label>
-    <input type="password" class="form-control" id="password">
+    <input type="password" class="form-control" id="password" required>
   </div>
   <div>
   <button type="submit" class="btn btn-primary">Submit</button>

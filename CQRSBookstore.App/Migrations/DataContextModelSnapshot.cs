@@ -32,9 +32,8 @@ namespace CQRSBookstore.App.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("ISBN")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<long>("ISBN")
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime?>("PublishedAt")
                         .HasColumnType("timestamp with time zone");
@@ -46,6 +45,32 @@ namespace CQRSBookstore.App.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Books");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("9b0896fa-3880-4c2e-bfd6-925c87f22878"),
+                            Author = "CQRS Queen",
+                            ISBN = 2345019330124L,
+                            PublishedAt = new DateTime(2015, 6, 30, 14, 0, 0, 0, DateTimeKind.Utc),
+                            Title = "CQRS for Dummies"
+                        },
+                        new
+                        {
+                            Id = new Guid("0550818d-36ad-4a8d-9c3a-a715bf15de76"),
+                            Author = "VS Vibe",
+                            ISBN = 1343019320124L,
+                            PublishedAt = new DateTime(2010, 12, 31, 13, 0, 0, 0, DateTimeKind.Utc),
+                            Title = "Visual Studio Tips"
+                        },
+                        new
+                        {
+                            Id = new Guid("8e0f11f1-be5c-4dbc-8012-c19ce8cbe8e1"),
+                            Author = "NHibernate King",
+                            ISBN = 5343012320111L,
+                            PublishedAt = new DateTime(2022, 8, 9, 14, 0, 0, 0, DateTimeKind.Utc),
+                            Title = "NHibernate Cookboook"
+                        });
                 });
 
             modelBuilder.Entity("CQRSBookstore.App.Models.User", b =>

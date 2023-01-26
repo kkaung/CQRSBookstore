@@ -1073,6 +1073,8 @@
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.2",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.1"
     ]
   },
@@ -1130,6 +1132,14 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
