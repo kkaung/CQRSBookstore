@@ -4,6 +4,7 @@ import { env, getItem } from '@/utilities';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 
 export default function BookDetailsPage() {
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -45,6 +46,8 @@ export default function BookDetailsPage() {
         }
     };
 
+    console.log(new Date(book?.publishedAt!));
+
     return (
         <Layout>
             <div className="container mx-auto">
@@ -55,7 +58,9 @@ export default function BookDetailsPage() {
                         <h1 className="display-6">{book?.title}</h1>
                         <div>Author: {book?.title}</div>
                         <div>ISBN: {book?.isbn}</div>
-                        <div>Published At: {book?.publishedAt}</div>
+                        <div>
+                            Published At: {dayjs(book?.publishedAt!).format('DD-MM-YYYY')}
+                        </div>
                         <button
                             className="btn btn-primary mt-3"
                             onClick={handleReserveBook}
