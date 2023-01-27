@@ -5,7 +5,7 @@ EXPOSE 5068
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 
-COPY ["./CQRSBookstore.UI", "src/CQRSBookstore.UI/"] 
+COPY ["./CQRSBookstore.UI/MVC/", "src/CQRSBookstore.UI/"] 
 COPY ["./CQRSBookstore.App", "src/CQRSBookstore.App/"] 
 COPY ["./CQRSBookstore.Api", "src/CQRSBookstore.Api/"] 
 

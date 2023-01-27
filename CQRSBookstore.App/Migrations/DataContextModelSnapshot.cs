@@ -105,10 +105,10 @@ namespace CQRSBookstore.App.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("2f3c8222-e935-4551-b48f-a729c9cb26e6"),
-                            Number = 8067,
-                            PickupDate = new DateTime(2023, 1, 26, 14, 46, 5, 905, DateTimeKind.Utc).AddTicks(5380),
-                            ReservationDate = new DateTime(2023, 1, 26, 14, 46, 5, 905, DateTimeKind.Utc).AddTicks(5380)
+                            Id = new Guid("cc409b7d-accf-4070-adf2-d60a9688f805"),
+                            Number = 1539,
+                            PickupDate = new DateTime(2023, 1, 27, 5, 11, 28, 729, DateTimeKind.Utc).AddTicks(4730),
+                            ReservationDate = new DateTime(2023, 1, 27, 5, 11, 28, 729, DateTimeKind.Utc).AddTicks(4730)
                         });
                 });
 
@@ -137,7 +137,7 @@ namespace CQRSBookstore.App.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("de80e2a6-3455-4a97-a53f-f915cfa21c74"),
+                            Id = new Guid("27a01e8e-10da-459f-b1ac-104137a28103"),
                             Email = "johndoe123@gmail.com",
                             Password = "johndoe",
                             Username = "John Doe"

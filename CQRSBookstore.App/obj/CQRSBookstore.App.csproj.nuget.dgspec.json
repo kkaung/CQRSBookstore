@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj": {}
+    "/Users/moongoblin/Documents/Developments/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj": {}
   },
   "projects": {
-    "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj": {
+    "/Users/moongoblin/Documents/Developments/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
+        "projectUniqueName": "/Users/moongoblin/Documents/Developments/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
         "projectName": "CQRSBookstore.App",
-        "projectPath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
+        "projectPath": "/Users/moongoblin/Documents/Developments/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
         "packagesPath": "/Users/moongoblin/.nuget/packages/",
-        "outputPath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/obj/",
+        "outputPath": "/Users/moongoblin/Documents/Developments/CQRSBookstore/CQRSBookstore.App/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/moongoblin/.nuget/NuGet/NuGet.Config"

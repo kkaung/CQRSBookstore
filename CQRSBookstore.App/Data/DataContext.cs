@@ -65,7 +65,7 @@ public class DataContext : DbContext
         modelBuilder
             .Entity<Reservation>()
             .HasData(
-                new Reservation { Id = Guid.NewGuid(), Number = new Random().Next(1000, 9999), }
+                new Reservation { Id = Guid.NewGuid(), Number = new Random().Next(1000, 9999) }
             );
     }
 }

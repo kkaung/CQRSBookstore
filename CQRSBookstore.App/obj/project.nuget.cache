@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CM9dq1TKxszyiAiCnU25pF8nmtGyF2zt42i1GM4NqcOtK1kzbFnlduNmxigBBiBfsAcKhLVug2UKZ/avVZxf7Q==",
+  "dgSpecHash": "Onjkj5rVe6pKZJdhyAOfUcpJAM72nXLEpp2EeiPr35TiYsHYA8cjIG2UdBYXezRgldJPo7sVRMsSIDKQm0Vviw==",
   "success": true,
-  "projectFilePath": "/Users/moongoblin/Desktop/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
+  "projectFilePath": "/Users/moongoblin/Documents/Developments/CQRSBookstore/CQRSBookstore.App/CQRSBookstore.App.csproj",
   "expectedPackageFiles": [
     "/Users/moongoblin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/moongoblin/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",

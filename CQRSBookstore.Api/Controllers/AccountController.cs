@@ -13,7 +13,6 @@ public class AccountController : ControllerBase
         _mediator = mediator;
     }
 
-
     [HttpPost("register")]
     public async Task<ActionResult> Register()
     {
