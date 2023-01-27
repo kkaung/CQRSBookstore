@@ -33,12 +33,11 @@ public class CreateReservationCommandHandler
             throw new Exception("Reservation already exists");
         }
 
-        var random = new Random();
+        var book = await _bookRepository.GetBookById(request.BookId);
 
         var reservation = new Reservation()
         {
             Id = Guid.NewGuid(),
-            Number = random.Next(1000, 9999),
             Book = await _bookRepository.GetBookById(request.BookId),
             User = await _userRepository.GetUserById(request.UserId),
         };

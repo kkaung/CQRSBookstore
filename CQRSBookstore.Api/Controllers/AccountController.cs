@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
+using CQRSBookstore.Api.Contracts.Account;
+using CQRSBookstore.App.Commands.Account;
+using CQRSBookstore.App.Queries.Account;
 
 namespace CQRSBookstore.Api.Controllers;
 
@@ -14,14 +17,22 @@ public class AccountController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<ActionResult> Register()
+    public async Task<ActionResult> Register([FromBody] RegisterRequest request)
     {
-        throw new NotImplementedException();
+        var command = new RegisterCommand(request.Username, request.Email, request.Password);
+        var result = await _mediator.Send(command);
+
+        Console.WriteLine(result.Token);
+
+        return Ok(result);
     }
 
     [HttpPost("login")]
-    public async Task<ActionResult> Login()
+    public async Task<ActionResult> Login([FromBody] LoginRequest request)
     {
-        throw new NotImplementedException();
+        var command = new LoginQuery(request.Email, request.Password);
+        var result = await _mediator.Send(command);
+
+        return Ok(result);
     }
 }

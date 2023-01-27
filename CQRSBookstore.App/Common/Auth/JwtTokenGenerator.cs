@@ -26,9 +26,8 @@ public class JwtTokenGenerator : IJwtTokenGenerator
 
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-            new Claim(JwtRegisteredClaimNames.Name, user.Username.ToString()),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.Email.ToString()),
         };
 
         var securityToken = new JwtSecurityToken(
@@ -46,7 +45,8 @@ public class JwtTokenGenerator : IJwtTokenGenerator
 public class JwtSettings
 {
     public const string SectionName = "JwtSettings";
-    public string Secret { get; init; } = "mySecret is wayt to product this is ha ha!!! wow I lov it sser this is the wge";
+    public string Secret { get; init; } =
+        "mySecret is wayt to product this is ha ha!!! wow I lov it sser this is the wge";
     public int ExpiryMinutes { get; init; }
     public string Issuer { get; init; } = null!;
     public string Audience { get; init; } = null!;
