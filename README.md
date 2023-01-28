@@ -14,7 +14,7 @@ React Website: https://cqrsbookstore.onrender.com (incomplete app)
 
 -   MVC App Architecture with CQRS Design Pattern
 
-![Design](./Docs/images/mvcPattern.png)
+![Design](./Docs/images/MVCPattern.png)
 
 -   App Architecture with CQRS Design Pattern
 
