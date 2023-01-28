@@ -1,9 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using CQRSBookstore.App;
-using CQRSBookstore.App.Data;
-using CQRSBookstore.App.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -18,8 +18,8 @@ builder.Services.AddCors(
             {
                 builder
                     .WithOrigins("http://localhost:3000", "https://cqrs-bookstore-react.vercel.app")
+                    .WithMethods("GET", "POST")
                     .AllowAnyHeader()
-                    .AllowAnyMethod()
                     .AllowCredentials();
             }
         )

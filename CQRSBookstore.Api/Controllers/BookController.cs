@@ -45,18 +45,6 @@ public class BookController : ControllerBase
         return Ok(result);
     }
 
-    [HttpGet("reservation")]
-    public async Task<IActionResult> GetReservation([FromQuery] int q)
-    {
-        if (q != 0)
-            return Ok(await _mediator.Send(new GetReservationByNumberQuery(q)));
-
-        var result = await _mediator.Send(new GetReservationByNumberQuery(q));
-
-        return Ok(result);
-    }
-
-    [Authorize]
     [HttpPost("reservation")]
     public async Task<IActionResult> BookReservation([FromBody] BookReservationRequest request)
     {
@@ -64,6 +52,14 @@ public class BookController : ControllerBase
         var uid = new Guid(HttpContext!.User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
         var result = await _mediator.Send(new CreateReservationCommand(uid, request.Bid));
+
+        return Ok(result);
+    }
+
+    [HttpGet("reservation/{rid}")]
+    public async Task<IActionResult> GetReservation([FromRoute] int rid)
+    {
+        var result = await _mediator.Send(new GetReservationByNumberQuery(rid));
 
         return Ok(result);
     }

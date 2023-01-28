@@ -32,7 +32,6 @@ export default function Home() {
 
     const handleCheck = (e: FormEvent) => {
         e.preventDefault();
-        console.log('Checking books');
         router.push(`/books/reservation/${number}`);
     };
 
@@ -45,7 +44,7 @@ export default function Home() {
                         The first leading bookstore in Australia
                     </h2>
                 </header>
-                <div
+                <form
                     className="mt-12  flex items-center space-x-4"
                     onSubmit={handleCheck}
                 >
@@ -59,7 +58,7 @@ export default function Home() {
                     <button type="submit" className="btn btn-primary">
                         Check
                     </button>
-                </div>
+                </form>
                 <div className="mt-4">
                     {isLoading ? (
                         <div>Loading books...</div>
