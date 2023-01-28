@@ -3,6 +3,7 @@
 An online web application system for a bookstore using .NET MVC (C#) or React with .NET .
 
 MVC Webiste: https://cqrs-bookstore-react.vercel.app (full app)
+    
 React Website: https://cqrsbookstore.onrender.com (incomplete app)
 
 | Codebase                                                                              | Description         |
@@ -10,7 +11,7 @@ React Website: https://cqrsbookstore.onrender.com (incomplete app)
 | [MVC App](https://github.com/kkaung/CQRSBookstore/tree/main/CQRSBookstore.UI/MVC)     | ASP.NET MVC App     |
 | [React App](https://github.com/kkaung/CQRSBookstore/tree/main/CQRSBookstore.UI/React) | NextJS Frontend App |
 | [Api](https://github.com/kkaung/CQRSBookstore/tree/main/CQRSBookstore.Api)            | .NET Core Server    |
-| [App Layour](https://github.com/kkaung/CQRSBookstore/tree/main/CQRSBookstore.App)     | Application Layer  |
+| [App Layour](https://github.com/kkaung/CQRSBookstore/tree/main/CQRSBookstore.App)     | Application Layer   |
 
 -   MVC App Architecture with CQRS Design Pattern
 
