@@ -2,8 +2,8 @@
 
 An online web application system for a bookstore using .NET MVC (C#) or React with .NET .
 
-MVC Webiste: https://cqrs-bookstore-react.vercel.app (full app)\
-React Website: https://cqrsbookstore.onrender.com (incomplete app)
+React Webiste: https://cqrs-bookstore-react.vercel.app (full app)\
+MVC Website: https://cqrsbookstore.onrender.com (incomplete app)
 
 | Codebase                                                                              | Description         |
 | ------------------------------------------------------------------------------------- | ------------------- |
