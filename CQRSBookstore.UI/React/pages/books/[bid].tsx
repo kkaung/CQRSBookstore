@@ -14,6 +14,7 @@ export default function BookDetailsPage() {
     const [show, setShow] = useState<boolean>(false);
     const [number, setNumber] = useState<number>(0);
     const [error, setError] = useState<string>('');
+    
     const router = useRouter();
 
     const { bid } = router.query;

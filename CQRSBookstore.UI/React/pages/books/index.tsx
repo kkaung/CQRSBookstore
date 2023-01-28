@@ -2,7 +2,6 @@ import { Layout } from '@/components/common';
 import { Book } from '@/types';
 import { env } from '@/utilities';
 import axios from 'axios';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
@@ -45,6 +44,7 @@ export default function index() {
                             <div className='text-2xl'>No Search Results. Please try again!</div>
                         ) : (
                             <>
+                                <div className='text-2xl mb-3'>Search Result</div>
                                 {books.map(book => (
                                     <div
                                         key={book.id}
