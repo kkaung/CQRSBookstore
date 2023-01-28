@@ -59,7 +59,8 @@ export default function BookDetailsPage() {
                         <div>Author: {book?.title}</div>
                         <div>ISBN: {book?.isbn}</div>
                         <div>
-                            Published At: {dayjs(book?.publishedAt!).format('DD-MM-YYYY')}
+                            Published At:
+                            {dayjs(book?.publishedAt!).format('DD-MM-YYYY')}
                         </div>
                         <button
                             className="btn btn-primary mt-3"
