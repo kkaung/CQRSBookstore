@@ -1,7 +1,7 @@
 using MediatR;
 using CQRSBookstore.App.Constracts.Account;
-using CQRSBookstore.App.Common.interfaces.Repositories;
-using CQRSBookstore.App.Common.interfaces.Account;
+using CQRSBookstore.App.Common.Interface.Repositories;
+using CQRSBookstore.App.Common.Interface.Account;
 
 namespace CQRSBookstore.App.Queries.Account;
 

@@ -1,10 +1,10 @@
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using CQRSBookstore.App.Data;
-using CQRSBookstore.App.Common.interfaces.Repositories;
+using CQRSBookstore.App.Common.Interface.Repositories;
 using CQRSBookstore.App.Repositories;
 using CQRSBookstore.App.Common.Auth;
-using CQRSBookstore.App.Common.interfaces.Account;
+using CQRSBookstore.App.Common.Interface.Account;
 
 namespace CQRSBookstore.App;
 

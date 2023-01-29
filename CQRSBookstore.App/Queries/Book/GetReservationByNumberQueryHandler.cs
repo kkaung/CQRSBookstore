@@ -1,4 +1,4 @@
-using CQRSBookstore.App.Common.interfaces.Repositories;
+using CQRSBookstore.App.Common.Interface.Repositories;
 using MediatR;
 
 namespace CQRSBookstore.App.Queries.Book;

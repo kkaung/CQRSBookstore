@@ -1,6 +1,6 @@
 using CQRSBookstore.App.Models;
 
-namespace CQRSBookstore.App.Common.interfaces.Account;
+namespace CQRSBookstore.App.Common.Interface.Account;
 
 public interface IJwtTokenGenerator
 {

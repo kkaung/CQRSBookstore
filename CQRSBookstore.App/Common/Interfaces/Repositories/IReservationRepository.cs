@@ -1,6 +1,6 @@
 using CQRSBookstore.App.Models;
 
-namespace CQRSBookstore.App.Common.interfaces.Repositories;
+namespace CQRSBookstore.App.Common.Interface.Repositories;
 
 public interface IReservationsRepository
 {

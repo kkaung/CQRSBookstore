@@ -1,4 +1,4 @@
-using CQRSBookstore.App.Common.interfaces.Repositories;
+using CQRSBookstore.App.Common.Interface.Repositories;
 using CQRSBookstore.App.Data;
 using CQRSBookstore.App.Models;
 using Microsoft.EntityFrameworkCore;

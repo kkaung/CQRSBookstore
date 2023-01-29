@@ -1,7 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using CQRSBookstore.App.Common.interfaces.Account;
+using CQRSBookstore.App.Common.Interface.Account;
 using CQRSBookstore.App.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
