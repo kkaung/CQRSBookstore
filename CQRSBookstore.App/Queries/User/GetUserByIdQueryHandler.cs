@@ -7,11 +7,15 @@ public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, Models.
 {
     private IUserRepository _userRepository;
 
-    public GetUserByIdQueryHandler(IUserRepository  userRepository) { 
+    public GetUserByIdQueryHandler(IUserRepository userRepository)
+    {
         _userRepository = userRepository;
     }
 
-    public async Task<Models.User?> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
+    public async Task<Models.User?> Handle(
+        GetUserByIdQuery request,
+        CancellationToken cancellationToken
+    )
     {
         return await _userRepository.GetUserById(request.uid);
     }

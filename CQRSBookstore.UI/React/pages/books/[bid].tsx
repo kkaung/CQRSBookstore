@@ -14,7 +14,7 @@ export default function BookDetailsPage() {
     const [show, setShow] = useState<boolean>(false);
     const [number, setNumber] = useState<number>(0);
     const [error, setError] = useState<string>('');
-    
+
     const router = useRouter();
 
     const { bid } = router.query;
@@ -42,6 +42,9 @@ export default function BookDetailsPage() {
         setIsSubmitting(true);
 
         const token = getItem('token');
+
+        // if not signed in, redirect to login page
+        if (!token) return router.push('/login');
 
         try {
             const res = await axios.post(
